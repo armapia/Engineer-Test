@@ -1,0 +1,17 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Parent {
+	void show() { System.out.println("parent"); }
+}
+class Child extends Parent {
+	void show() { System.out.println("child"); }
+}
+class Test
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Parent pa = new Child();
+		pa.show();
+	}
+}
