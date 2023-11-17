@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class A{
+	int a;
+	public A(int a) { this.a = a;}
+	void display() { System.out.println("a=" + a); }
+}
+class B extends A{
+	public B (int a){
+		super(a);
+		super.display();
+	}
+}
+class Test
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		B obj = new B(10);
+	}
+}
