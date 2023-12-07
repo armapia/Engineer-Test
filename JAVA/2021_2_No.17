@@ -1,0 +1,15 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Test
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		System.out.print(Test.check(1));
+	}
+	
+	static String check(int num){
+		return (num >= 0) ? "positive" : "negative";
+	}
+}
